@@ -431,7 +431,7 @@ USER QUESTION:
 
     model_name = st.secrets.get(
         "GEMINI_MODEL",
-        os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
+        os.getenv("GEMINI_MODEL", "gemini-3.6-flash"),
     )
 
     response = client.models.generate_content(
